@@ -9,6 +9,7 @@
 html, 
 body {
     height: 100%;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -86,6 +87,8 @@ input[type="text"] {
     height: 40px;
     border-radius: 24px;
     border: 2px solid #dfe1e5;
+    padding-left: 20px;
+    
 
 }
 input[type="submit"] {
@@ -115,6 +118,8 @@ footer {
     display: flex;
     padding: 20px;
     border-top:1px solid #e4e4e4;
+    font-size: 0.9em;
+
 }
 .footer-nav-left {
     flex-grow: 1;
@@ -122,11 +127,12 @@ footer {
     margin-top: 20px;
 }
 .footer-nav-right {
-  
     margin-top: 20px;
 }
-.footer-nav-right a {
-   
+.footer-nav-right a, .footer-nav-left a {
+    display:inline-block;
+    margin: 5px 5px 5px 0;
+    
 }
 #country-name {
     display: flex;
